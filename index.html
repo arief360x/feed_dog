@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dog</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <main>
-        <!-- Title -->
-        <div> 
-            <h1>Please feed Doggo</h1>
-            <p>Hi, I need some food and water. Can you help me?</p>
-        </div>
-        
-        <!-- Image and message  -->
-        <div>
-            <img src="assets/dog_pic.png" alt="">
-            <p id="message_view"> ...</p>
-        </div>
-        
-        <!-- Buttons -->
-        <div>
-            <button id="feed_btn">Feed</button>
-            <button id="nofeed_btn">No, hate dogs</button>
+    <main class="card">
+        <!-- Container for the whole things, for css -->
+        <div class="card_container">
+            <!-- Title -->
+            <div class="card_container_header">
+                <h1>Please feed Doggo</h1>
+                <p>Hi, I need some food and water. Can you help me?</p>
+            </div>
+
+            <!-- Image and message  -->
+            <div class="card_container_imgmsg">
+                <img src="assets/dog_pic.png" alt="Dog Image" id="source_img">
+                <p id="message_view"> ...</p>
+            </div>
+
+            <!-- Buttons -->
+            <div class="card_container_btn">
+                <button id="feed_btn" onclick="feedDog()" class="primary_btn">Feed</button>
+                <button id="nofeed_btn" onclick="feedDogNo()" class="primary_btn">No, hate dogs</button>
+            
+            </div>
+
+
 
         </div>
+
     </main>
 
+    <script src="index.js"></script>
 
 
-    
+
 </body>
+
 </html>
